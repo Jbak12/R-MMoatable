@@ -20,6 +20,7 @@
 		1168EF322BFAADBE0058DE24 /* URLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168EF312BFAADBE0058DE24 /* URLProvider.swift */; };
 		1168EF342BFABA080058DE24 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168EF332BFABA080058DE24 /* Models.swift */; };
 		1168EF362BFB96680058DE24 /* CharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168EF352BFB96680058DE24 /* CharacterDetailsView.swift */; };
+		1168EF382BFBF6CE0058DE24 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168EF372BFBF6CE0058DE24 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		1168EF312BFAADBE0058DE24 /* URLProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProvider.swift; sourceTree = "<group>"; };
 		1168EF332BFABA080058DE24 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		1168EF352BFB96680058DE24 /* CharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsView.swift; sourceTree = "<group>"; };
+		1168EF372BFBF6CE0058DE24 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				1168EF2F2BFAAC440058DE24 /* MainListView.swift */,
 				1168EF332BFABA080058DE24 /* Models.swift */,
 				1168EF352BFB96680058DE24 /* CharacterDetailsView.swift */,
+				1168EF372BFBF6CE0058DE24 /* Colors.swift */,
 			);
 			path = "R&MMoatable";
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1168EF302BFAAC440058DE24 /* MainListView.swift in Sources */,
+				1168EF382BFBF6CE0058DE24 /* Colors.swift in Sources */,
 				1168EF2C2BFAABCA0058DE24 /* DataService.swift in Sources */,
 				1168EF322BFAADBE0058DE24 /* URLProvider.swift in Sources */,
 				1168EF362BFB96680058DE24 /* CharacterDetailsView.swift in Sources */,

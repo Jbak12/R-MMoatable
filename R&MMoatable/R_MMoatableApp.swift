@@ -14,6 +14,11 @@ struct R_MMoatableApp: App {
             let dataService = DataService()
             let viewModel = MainListViewModel(dataService: dataService)
             MainListView(viewModel: viewModel)
+                .task {
+                    await viewModel.loadData()
+                }
+            
         }
     }
 }
+

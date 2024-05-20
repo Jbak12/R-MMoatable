@@ -34,10 +34,16 @@ struct Character: Codable, Identifiable {
     let created: String
 }
 
-extension Character: Equatable {
+extension Character: Hashable, Equatable {
+    
     static func == (lhs: Character, rhs: Character) -> Bool {
             return lhs.id == rhs.id
     }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
 }
 
 enum Gender: String, Codable {
