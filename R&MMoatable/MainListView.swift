@@ -58,17 +58,17 @@ struct MainListView: View {
         NavigationStack {
             List {
 
-                ForEach(vm.characters, id: \.id) { character in
-                        NavigationLink(value: character) {
-                            CharacterRowView(character: character)
-                        }
-                        .listRowBackground(Color.lightBackground)
-                        .task {
-                            if character == vm.characters.last && !vm.isLoading {
-                                await vm.loadData()
+                        ForEach(vm.characters, id: \.id) { character in
+                                NavigationLink(value: character) {
+                                    CharacterRowView(character: character)
+                                }
+                                .listRowBackground(Color.lightBackground)
+                                .task {
+                                    if character == vm.characters.last && !vm.isLoading {
+                                        await vm.loadData()
+                                    }
+                                }
                             }
-                        }
-                    }
                 HStack{
                     Spacer()
                     ProgressView {
