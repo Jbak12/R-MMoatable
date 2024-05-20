@@ -21,7 +21,7 @@ struct Info: Codable {
     let next, prev: String?
 }
 
-struct Character: Codable {
+struct Character: Codable, Identifiable {
     let id: Int
     let name: String
     let status: Status
@@ -33,12 +33,12 @@ struct Character: Codable {
     let url: String
     let created: String
 }
-//extension Character: Hashable {
-//    static func == (lhs: Character, rhs: Character) -> Bool {
-//        character.id
-//    }
-//    
-//}
+
+extension Character: Equatable {
+    static func == (lhs: Character, rhs: Character) -> Bool {
+            return lhs.id == rhs.id
+    }
+}
 
 enum Gender: String, Codable {
     case female = "Female"

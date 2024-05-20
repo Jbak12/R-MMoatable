@@ -12,7 +12,7 @@ class MainListViewModel: ObservableObject {
     let dataService = DataService()
     @Published var characters: [Character] = []
     private var currentPage: Int = 1
-    private var isLoading = false
+    var isLoading = false
     
     @MainActor
     func loadData() async {
