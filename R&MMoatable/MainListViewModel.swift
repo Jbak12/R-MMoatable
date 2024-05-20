@@ -9,10 +9,12 @@ import Foundation
 import SwiftUI
 
 class MainListViewModel: ObservableObject {
-    let dataService = DataService()
+    let dataService: DataService
     @Published var characters: [Character] = []
+    @Published var showingAlert = true
     private var currentPage: Int = 1
     var isLoading = false
+    @Published var selectedCharacter: Character?
     
     @MainActor
     func loadData() async {
@@ -30,5 +32,19 @@ class MainListViewModel: ObservableObject {
 
         isLoading = false
     }
+    
+    func selectCharacter(_ character: Character) {
+        selectedCharacter = character
+    }
+
+    func deselectCharacter() {
+        selectedCharacter = nil
+    }
+    init(dataService: DataService) {
+        self.dataService = dataService
+    }
+    
+    
 }
+
 

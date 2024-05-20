@@ -11,7 +11,9 @@ import SwiftUI
 struct R_MMoatableApp: App {
     var body: some Scene {
         WindowGroup {
-            MainListView()
+            let dataService = DataService()
+            let viewModel = MainListViewModel(dataService: dataService)
+            MainListView(viewModel: viewModel)
         }
     }
 }
