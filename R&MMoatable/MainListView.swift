@@ -12,10 +12,25 @@ struct MainListView: View {
     @StateObject private var vm: MainListViewModel = MainListViewModel()
      
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            .task {
-                <#code#>
+        List {
+            ForEach(vm.characters, id:\.id) { character in
+                Text(character.name)
             }
+            
+        }
+        
+        Button(action: {
+            Task {
+                await vm.loadData()
+            }
+        }, label: {
+            Text("+")
+                .cornerRadius(3.0)
+                .frame(width: 300)
+                .background(.green)
+
+        })
+
     }
 }
 

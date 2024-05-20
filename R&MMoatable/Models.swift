@@ -18,7 +18,7 @@ struct Page<T: Codable>: Codable {
 
 struct Info: Codable {
     let count, pages: Int
-    let next, prev: String
+    let next, prev: String?
 }
 
 struct Character: Codable {
@@ -33,11 +33,18 @@ struct Character: Codable {
     let url: String
     let created: String
 }
+//extension Character: Hashable {
+//    static func == (lhs: Character, rhs: Character) -> Bool {
+//        character.id
+//    }
+//    
+//}
 
 enum Gender: String, Codable {
     case female = "Female"
     case male = "Male"
     case unknown = "unknown"
+    case genderLess = "Genderless"
 }
 
 struct Location: Codable {

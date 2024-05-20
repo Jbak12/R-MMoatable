@@ -6,9 +6,29 @@
 //
 
 import Foundation
+import SwiftUI
+
 class MainListViewModel: ObservableObject {
-    @Published var characters: [String] = []
-    func fetchData() async  {
-        <#function body#>
+    let dataService = DataService()
+    @Published var characters: [Character] = []
+    private var currentPage: Int = 1
+    private var isLoading = false
+    
+    @MainActor
+    func loadData() async {
+        guard !isLoading else { return }
+        isLoading = true
+
+        print("CURRENTPAGE: \(currentPage) ")
+        do {
+            let page = try await dataService.getPage(pageNumber: currentPage)
+            characters.append(contentsOf: page.results)
+            currentPage += 1
+        } catch {
+            print("Failed to load data: \(error.localizedDescription)")
+        }
+
+        isLoading = false
     }
 }
+
