@@ -17,8 +17,6 @@ struct R_MMoatableApp: App {
                 .task {
                     await viewModel.loadData()
                 }
-            
         }
     }
 }
-

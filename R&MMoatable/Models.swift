@@ -35,21 +35,19 @@ struct Character: Codable, Identifiable {
 }
 
 extension Character: Hashable, Equatable {
-    
     static func == (lhs: Character, rhs: Character) -> Bool {
-            return lhs.id == rhs.id
+        return lhs.id == rhs.id
     }
-    
+
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
-
 }
 
 enum Gender: String, Codable {
     case female = "Female"
     case male = "Male"
-    case unknown = "unknown"
+    case unknown
     case genderLess = "Genderless"
 }
 
@@ -61,5 +59,5 @@ struct Location: Codable {
 enum Status: String, Codable {
     case alive = "Alive"
     case dead = "Dead"
-    case unknown = "unknown"
+    case unknown
 }

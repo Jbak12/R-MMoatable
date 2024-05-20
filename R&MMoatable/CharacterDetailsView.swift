@@ -15,7 +15,6 @@ class DetailViewModel: ObservableObject {
     }
 }
 
-
 struct CharacterDetailsView: View {
     @StateObject private var vm: DetailViewModel
 
@@ -55,6 +54,6 @@ struct CharacterDetailsView: View {
     }
 }
 
-//#Preview {
+// #Preview {
 //    CharacterDetailsView()
-//}
+// }

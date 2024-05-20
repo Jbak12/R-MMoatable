@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-
-fileprivate enum Constants {
+private enum Constants {
     static let listHosrizontalSpacing: CGFloat = 20.0
     static let imgSize: CGFloat = 50.0
 }
@@ -49,41 +48,40 @@ struct CharacterRowView: View {
 
 struct MainListView: View {
     @ObservedObject private var vm: MainListViewModel
-    
+
     init(viewModel: MainListViewModel) {
         vm = viewModel
     }
-    
+
     var body: some View {
         NavigationStack {
             List {
-
-                        ForEach(vm.characters, id: \.id) { character in
-                                NavigationLink(value: character) {
-                                    CharacterRowView(character: character)
-                                }
-                                .listRowBackground(Color.lightBackground)
-                                .task {
-                                    if character == vm.characters.last && !vm.isLoading {
-                                        await vm.loadData()
-                                    }
-                                }
-                            }
-                HStack{
+                ForEach(vm.characters, id: \.id) { character in
+                    NavigationLink(value: character) {
+                        CharacterRowView(character: character)
+                    }
+                    .listRowBackground(Color.lightBackground)
+                    .task {
+                        if character == vm.characters.last && !vm.isLoading {
+                            await vm.loadData()
+                        }
+                    }
+                }
+                HStack {
                     Spacer()
                     ProgressView {
                         Text("Loading...")
                     }
-                    
+
                     Spacer()
                 }
             }
-            
+
             .listStyle(.plain)
             .navigationDestination(for: Character.self) { selectedCharacter in
                 CharacterDetailsView(viewModel: DetailViewModel(character: selectedCharacter))
             }
-            
+
             .background(Color.lightBackground)
             .navigationTitle("Rick and Morty Characters")
             .navigationBarTitleDisplayMode(.inline)
@@ -96,16 +94,13 @@ struct MainListView: View {
     }
 }
 
-
-
-
-//struct MainListView: View {
+// struct MainListView: View {
 //    @ObservedObject private var vm: MainListViewModel
-//    
+//
 //    init(viewModel: MainListViewModel) {
 //        vm = viewModel
 //    }
-//    
+//
 //    var body: some View {
 //        NavigationStack {
 //            List {
@@ -176,11 +171,11 @@ struct MainListView: View {
 //            .alert(isPresented: $vm.showingAlert, content: {
 //                Alert(title: Text("ziomal"))
 //            })
-//            
-//            
+//
+//
 //        }
 //    }
-//}
-//#Preview {
+// }
+// #Preview {
 //    MainListView()
-//}
+// }

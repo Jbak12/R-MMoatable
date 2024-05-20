@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 enum URLProvider {
     static let charactersURL = "https://rickandmortyapi.com/api/character"
     static let EpisodeURL = "https://rickandmortyapi.com/api/episode"

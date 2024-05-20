@@ -1,5 +1,5 @@
 //
-//  ListViewModel.swift
+//  MainListViewModel.swift
 //  R&MMoatable
 //
 //  Created by Jakub Bakalarz on 19/05/2024.
@@ -15,7 +15,7 @@ class MainListViewModel: ObservableObject {
     private var currentPage: Int = 1
     var isLoading = false
     @Published var selectedCharacter: Character?
-    
+
     @MainActor
     func loadData() async {
         guard !isLoading else { return }
@@ -32,7 +32,7 @@ class MainListViewModel: ObservableObject {
 
         isLoading = false
     }
-    
+
     func selectCharacter(_ character: Character) {
         selectedCharacter = character
     }
@@ -40,11 +40,8 @@ class MainListViewModel: ObservableObject {
     func deselectCharacter() {
         selectedCharacter = nil
     }
+
     init(dataService: DataService) {
         self.dataService = dataService
     }
-    
-    
 }
-
-
