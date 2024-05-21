@@ -26,6 +26,8 @@
 		1168EF472BFC22EE0058DE24 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168EF462BFC22EE0058DE24 /* Character.swift */; };
 		1168EF492BFC23120058DE24 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168EF482BFC23120058DE24 /* Episode.swift */; };
 		1168EF4B2BFC23980058DE24 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168EF4A2BFC23980058DE24 /* Page.swift */; };
+		1168EF4D2BFC23F50058DE24 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168EF4C2BFC23F50058DE24 /* DetailsViewModel.swift */; };
+		1168EF512BFC5C4C0058DE24 /* DetailViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168EF502BFC5C4C0058DE24 /* DetailViewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		1168EF462BFC22EE0058DE24 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		1168EF482BFC23120058DE24 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		1168EF4A2BFC23980058DE24 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		1168EF4C2BFC23F50058DE24 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		1168EF502BFC5C4C0058DE24 /* DetailViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				1168EF2D2BFAABF10058DE24 /* MainListViewModel.swift */,
+				1168EF4C2BFC23F50058DE24 /* DetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 		1168EF3E2BFC0C260058DE24 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
+				1168EF502BFC5C4C0058DE24 /* DetailViewFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -363,8 +369,10 @@
 				1168EF322BFAADBE0058DE24 /* URLProvider.swift in Sources */,
 				1168EF452BFC18720058DE24 /* ImageView.swift in Sources */,
 				1168EF362BFB96680058DE24 /* CharacterDetailsView.swift in Sources */,
+				1168EF512BFC5C4C0058DE24 /* DetailViewFactory.swift in Sources */,
 				1168EF492BFC23120058DE24 /* Episode.swift in Sources */,
 				1168EF2E2BFAABF10058DE24 /* MainListViewModel.swift in Sources */,
+				1168EF4D2BFC23F50058DE24 /* DetailsViewModel.swift in Sources */,
 				1168EF412BFC11190058DE24 /* ErrorHandler.swift in Sources */,
 				1168EF432BFC180E0058DE24 /* ListRowView.swift in Sources */,
 				1168EF022BFAA8540058DE24 /* R_MMoatableApp.swift in Sources */,

@@ -16,7 +16,6 @@ class MainListViewModel: ObservableObject {
     private var currentPage: Int = 1
     var isLoading = true
 
-    @MainActor
     func loadData() async {
 //        guard !isLoading else { return }
         isLoading = true
