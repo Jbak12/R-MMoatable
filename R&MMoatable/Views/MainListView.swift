@@ -61,12 +61,14 @@ struct MainListView: View {
                             }
                         }
                     }
-                    HStack {
-                        Spacer()
-                        ProgressView {
-                            Text("Loading...")
+                    if vm.isLoading {
+                        HStack {
+                            Spacer()
+                            ProgressView {
+                                Text("Loading...")
+                            }
+                            Spacer()
                         }
-                        Spacer()
                     }
                 }
                 .listStyle(.plain)
@@ -88,8 +90,12 @@ struct MainListView: View {
                     DetailViewFactory.make(from: selectedCharacter)
                 }
                 .navigationBarBackground(Color.rickBlue)
+                .refreshable {
+                    guard vm.currentPage == 1 else { return }
+                    await vm.loadData()
+                }
             }
         }
-        .alert(isPresented: $vm.showingAlert, withError: vm.error)
+        .alert(isPresented: $vm.showingAlert, withError: vm.lastError)
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 
 private enum Constants {
     static let listHosrizontalSpacing: CGFloat = 20.0
-    static let imgSize: CGSize = .init(width: 50.0, height: 50.0)
+    static let imgSize: CGSize = .init(width: 60, height: 60.0)
 }
 
 struct CharacterRowView: View {

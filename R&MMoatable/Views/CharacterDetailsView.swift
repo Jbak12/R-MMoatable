@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+private enum Constants {
+    static let imgSize: CGSize = .init(width: 150.0, height: 150.0)
+}
+
 struct CharacterDetailsView: View {
     @ObservedObject private var vm: DetailViewModel
 
@@ -19,27 +23,30 @@ struct CharacterDetailsView: View {
             Color.lightBackground.edgesIgnoringSafeArea(.all)
 
             ScrollView {
-                VStack(spacing: 20) {
-                    AsyncImageView(url: vm.character.image, imageSize: .init(width: 100, height: 100))
-                    Text(vm.character.name)
-                        .font(.largeTitle)
-                    Text("gender: " + vm.character.gender.rawValue)
-                    Text("comes from " + vm.character.origin.name)
-                    Text("last seen on " + vm.character.location.name)
-                    if let firstEpisode = vm.episodes.first, let lastEpisode = vm.episodes.last {
-                        VStack(alignment: .leading, spacing: 10) {
-                            Text("First Episode: \(firstEpisode.episode) - \(firstEpisode.name)")
-                            Text("Last Episode: \(lastEpisode.episode) - \(lastEpisode.name)")
-                        }
-                        .font(.body)
+                VStack(alignment: .leading, spacing: 20) {
+                    HStack(alignment: .center, spacing: 40) {
+                        AsyncImageView(url: vm.character.image, imageSize: Constants.imgSize)
+                        Text(vm.character.name)
+                            .font(.largeTitle)
+                            .foregroundColor(Color.primaryText)
+                            .fontDesign(.monospaced)
                     }
-                    Text("Appeared in \(vm.character.episode.count) episodes")
-                        .font(.body)
+                    infoLabel(label: "Gender", specifics: vm.character.gender.rawValue)
+                    infoLabel(label: "Comes from ", specifics: vm.character.origin.name)
+                    infoLabel(label: "Last seen on", specifics: vm.character.location.name)
+                    infoLabel(label: "Number of appearances", specifics: String(vm.character.episode.count))
+                    if let firstEpisode = vm.episodes.first, let lastEpisode = vm.episodes.last {
+                        infoLabel(label: "First episode", specifics: "\(firstEpisode.episode) - \(firstEpisode.name)")
+                        infoLabel(label: "Last episode", specifics: "\(lastEpisode.episode) - \(lastEpisode.name)")
+                    }
                 }
+                .padding(.top, 20)
+                .padding(.leading, 10)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.mortyYellow)
             .padding(.horizontal, 20)
+            .scrollIndicators(.never)
         }
         .navigationBarBackButtonHidden(true)
         .toolbar {
@@ -50,6 +57,22 @@ struct CharacterDetailsView: View {
         .navigationBarBackground(Color.rickBlue)
         .task {
             await vm.fetchEpisode()
+        }
+    }
+}
+
+struct infoLabel: View {
+    var label: String
+    var specifics: String
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(label)
+                .fontDesign(.monospaced)
+                .foregroundStyle(Color.primaryText)
+                .fontWeight(.bold)
+            Text(specifics)
+                .fontDesign(.monospaced)
+                .foregroundStyle(Color.secondaryText)
         }
     }
 }

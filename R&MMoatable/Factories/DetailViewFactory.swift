@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DetailViewFactory  {
+enum DetailViewFactory {
     static func make(from character: Character) -> CharacterDetailsView {
         let service = DataService()
         let vm = DetailViewModel(character: character, service: service)
@@ -18,4 +18,3 @@ struct DetailViewFactory  {
         return view
     }
 }
-

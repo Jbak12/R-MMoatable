@@ -12,23 +12,22 @@ class MainListViewModel: ObservableObject {
     let dataService: DataService
     @Published var characters: [Character] = []
     @Published var showingAlert = false
-    @Published var error: Error?
-    private var currentPage: Int = 1
-    var isLoading = true
+    @Published var lastError: Error?
+    var currentPage: Int = 1
+    @Published var isLoading = false
 
+    @MainActor
     func loadData() async {
-//        guard !isLoading else { return }
+        guard !isLoading else { return }
         isLoading = true
 
         print("CURRENTPAGE: \(currentPage) ")
         do {
             let page = try await dataService.getPage(pageNumber: currentPage)
-            await MainActor.run {
-                characters.append(contentsOf: page.results)
-            }
+            characters.append(contentsOf: page.results)
             currentPage += 1
         } catch {
-            self.error = error
+            lastError = error
             showingAlert = true
         }
 
