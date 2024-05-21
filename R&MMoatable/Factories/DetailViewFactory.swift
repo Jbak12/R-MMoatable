@@ -8,7 +8,7 @@
 import Foundation
 
 enum DetailViewFactory {
-    static func make(from character: Character) -> CharacterDetailsView {
+    static func makeDetailView(from character: Character) -> CharacterDetailsView {
         let service = DataService()
         let vm = DetailViewModel(character: character, service: service)
         let view = CharacterDetailsView(viewModel: vm)

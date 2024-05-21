@@ -9,9 +9,10 @@ import Foundation
 
 class DetailViewModel: ObservableObject {
     let character: Character
-    let service: DataService
-    @Published var episodes: [Episode] = []
-    @Published var error: Error? = nil
+    private let service: RickAnMortyDataService
+    @Published var selectedEpisodes: [Episode] = []
+    @Published var lastError: Error? = nil
+    @Published var showingAlert = false
 
     init(character: Character, service: DataService) {
         self.character = character
@@ -26,14 +27,10 @@ class DetailViewModel: ObservableObject {
             async let episode1Fetch = service.getEpisode(episodeURL: firstEpisodeURLString)
             async let episode2Fetch = service.getEpisode(episodeURL: lastEpisodeURLString)
             let (e1, e2) = try await (episode1Fetch, episode2Fetch)
-            episodes.append(contentsOf: [e1, e2])
+            selectedEpisodes.append(contentsOf: [e1, e2])
         } catch {
-            self.error = error
+            lastError = error
+            showingAlert = true
         }
-    }
-
-    @MainActor
-    func cancelError() {
-        error = nil
     }
 }

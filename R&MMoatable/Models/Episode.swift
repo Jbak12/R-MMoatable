@@ -22,15 +22,3 @@ struct Episode: Codable {
         case url
     }
 }
-
-// extension Episode: ApiModelProtocol{
-//    static var urlString: String{
-//        return "https://rickandmortyapi.com/api/episode"
-//    }
-// }
-
-// extension Episode {
-//    var numberOfCharacters: Int {
-//        characters.count
-//    }
-// }

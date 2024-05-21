@@ -98,36 +98,6 @@
             endingLineNumber = "13"
             landmarkName = "body"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "FF49EBDC-EB18-49BD-BB9E-1B551E1BAF12 - a85d0b0b27013e42"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "R_MMoatable.R_MMoatableApp.body.getter : some"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/R_MMoatableApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13">
-               </Location>
-               <Location
-                  uuid = "FF49EBDC-EB18-49BD-BB9E-1B551E1BAF12 - e3d6aa7ec83c9d85"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in R_MMoatable.R_MMoatableApp.body.getter : some"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/R_MMoatableApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -160,172 +130,6 @@
             endingLineNumber = "11"
             landmarkName = "R_MMoatableApp"
             landmarkType = "14">
-            <Locations>
-               <Location
-                  uuid = "7D6EEA3E-2B14-43AD-BCFB-670E03F2868C - bc373d20a5ac9842"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "R_MMoatable.R_MMoatableApp.init() -&gt; R_MMoatable.R_MMoatableApp"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/R_MMoatableApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11">
-               </Location>
-               <Location
-                  uuid = "7D6EEA3E-2B14-43AD-BCFB-670E03F2868C - 1783283283250a3c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "main"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/R_MMoatableApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6E2AC090-2CB5-4B32-92B4-7D2A9B4FB003"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "R&amp;MMoatable/R_MMoatableApp.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A2EADFDA-FC19-4FDC-87C6-7F0ED08D6EE1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "R&amp;MMoatable/R_MMoatableApp.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "A2EADFDA-FC19-4FDC-87C6-7F0ED08D6EE1 - e3d6aa7ec83c9d01"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in R_MMoatable.R_MMoatableApp.body.getter : some"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/R_MMoatableApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17">
-               </Location>
-               <Location
-                  uuid = "A2EADFDA-FC19-4FDC-87C6-7F0ED08D6EE1 - 712890afab52949c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in R_MMoatable.R_MMoatableApp.body.getter : some"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/R_MMoatableApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17">
-               </Location>
-               <Location
-                  uuid = "A2EADFDA-FC19-4FDC-87C6-7F0ED08D6EE1 - 16c7218ef1008880"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in R_MMoatable.R_MMoatableApp.body.getter : some"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/R_MMoatableApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "37C4354C-E7DA-4FD8-A2E2-9A741AADEFF7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "R&amp;MMoatable/R_MMoatableApp.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "37C4354C-E7DA-4FD8-A2E2-9A741AADEFF7 - 16c7218ef10088e1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in R_MMoatable.R_MMoatableApp.body.getter : some"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/R_MMoatableApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18">
-               </Location>
-               <Location
-                  uuid = "37C4354C-E7DA-4FD8-A2E2-9A741AADEFF7 - 2d4e59782d27a90e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in R_MMoatable.R_MMoatableApp.body.getter : some"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/R_MMoatableApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18">
-               </Location>
-               <Location
-                  uuid = "37C4354C-E7DA-4FD8-A2E2-9A741AADEFF7 - 6d9dd624ce8cdceb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in R_MMoatable.R_MMoatableApp.body.getter : some"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/R_MMoatableApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -354,68 +158,10 @@
             filePath = "R&amp;MMoatable/ViewModels/DetailsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "fetchEpisode()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "94C05461-AB06-45C1-9959-5CBF5E5D18A9 - 3a0f96eb34bbe83b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for R_MMoatable.DetailViewModel.fetchEpisode() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/DetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25">
-               </Location>
-               <Location
-                  uuid = "94C05461-AB06-45C1-9959-5CBF5E5D18A9 - aee6ce6acb336c22"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(8) suspend resume partial function for R_MMoatable.DetailViewModel.fetchEpisode() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/DetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25">
-               </Location>
-               <Location
-                  uuid = "94C05461-AB06-45C1-9959-5CBF5E5D18A9 - 75af8e2925fbe60e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(12) suspend resume partial function for R_MMoatable.DetailViewModel.fetchEpisode() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/DetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25">
-               </Location>
-               <Location
-                  uuid = "94C05461-AB06-45C1-9959-5CBF5E5D18A9 - ca77ba9b3c63273"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(17) suspend resume partial function for R_MMoatable.DetailViewModel.fetchEpisode() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/DetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -428,112 +174,10 @@
             filePath = "R&amp;MMoatable/ViewModels/DetailsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "fetchEpisode()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "17F5AA0F-0174-4CA9-B18B-36AC3158C9C4 - 3a0f96eb34bbe814"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for R_MMoatable.DetailViewModel.fetchEpisode() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/DetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26">
-               </Location>
-               <Location
-                  uuid = "17F5AA0F-0174-4CA9-B18B-36AC3158C9C4 - ce1672c9a8b00369"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "implicit closure #1 @Sendable () async throws -&gt; R_MMoatable.Episode in R_MMoatable.DetailViewModel.fetchEpisode() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/DetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26">
-               </Location>
-               <Location
-                  uuid = "17F5AA0F-0174-4CA9-B18B-36AC3158C9C4 - d6150b272e214e28"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for implicit closure #1 @Sendable () async throws -&gt; R_MMoatable.Episode in R_MMoatable.DetailViewModel.fetchEpisode() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/DetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26">
-               </Location>
-               <Location
-                  uuid = "17F5AA0F-0174-4CA9-B18B-36AC3158C9C4 - 3a592052d748ae74"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for implicit closure #1 @Sendable () async throws -&gt; R_MMoatable.Episode in R_MMoatable.DetailViewModel.fetchEpisode() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/DetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26">
-               </Location>
-               <Location
-                  uuid = "17F5AA0F-0174-4CA9-B18B-36AC3158C9C4 - 1d9d0029027f8baa"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for implicit closure #1 @Sendable () async throws -&gt; R_MMoatable.Episode in R_MMoatable.DetailViewModel.fetchEpisode() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/DetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26">
-               </Location>
-               <Location
-                  uuid = "17F5AA0F-0174-4CA9-B18B-36AC3158C9C4 - 7e5903ae7462a9e5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for implicit closure #1 @Sendable () async throws -&gt; R_MMoatable.Episode in R_MMoatable.DetailViewModel.fetchEpisode() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/DetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "383366CE-956E-4841-817C-7A37B50D86EE"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "R&amp;MMoatable/Views/CharacterDetailsView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "body"
-            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -546,8 +190,8 @@
             filePath = "R&amp;MMoatable/ViewModels/MainListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "loadData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -562,8 +206,8 @@
             filePath = "R&amp;MMoatable/ViewModels/MainListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "loadData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -578,40 +222,10 @@
             filePath = "R&amp;MMoatable/ViewModels/MainListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "loadData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CA95485B-3EC8-474B-AD09-C5D507C25D26 - ffdd8697c58562a7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for R_MMoatable.MainListViewModel.loadData() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/MainListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34">
-               </Location>
-               <Location
-                  uuid = "CA95485B-3EC8-474B-AD09-C5D507C25D26 - a35e421acd3fc8a6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for R_MMoatable.MainListViewModel.loadData() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/MainListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34">
-               </Location>
-            </Locations>
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "MainListViewModel"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -624,100 +238,10 @@
             filePath = "R&amp;MMoatable/ViewModels/MainListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "loadData()"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "init(dataService:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7217A501-64C9-49FE-A10C-E449CF4BE9E0 - b6d63dfdf4c83684"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for R_MMoatable.MainListViewModel.loadData() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/MainListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35">
-               </Location>
-               <Location
-                  uuid = "7217A501-64C9-49FE-A10C-E449CF4BE9E0 - ffdd8697c5856286"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for R_MMoatable.MainListViewModel.loadData() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/MainListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35">
-               </Location>
-               <Location
-                  uuid = "7217A501-64C9-49FE-A10C-E449CF4BE9E0 - a35e421acd3fc887"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for R_MMoatable.MainListViewModel.loadData() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/MainListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B7E2E074-41EA-4480-A6CF-3D067974D382"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "R&amp;MMoatable/ViewModels/MainListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "loadData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "B7E2E074-41EA-4480-A6CF-3D067974D382 - ffdd8697c58562a7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for R_MMoatable.MainListViewModel.loadData() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/MainListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34">
-               </Location>
-               <Location
-                  uuid = "B7E2E074-41EA-4480-A6CF-3D067974D382 - a35e421acd3fc8a6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for R_MMoatable.MainListViewModel.loadData() async -&gt; ()"
-                  moduleName = "R&amp;MMoatable"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jakubbakalarz/R&amp;MMoatable/R&amp;MMoatable/ViewModels/MainListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -730,8 +254,8 @@
             filePath = "R&amp;MMoatable/ViewModels/MainListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "loadData()"
             landmarkType = "7">
          </BreakpointContent>

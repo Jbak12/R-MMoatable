@@ -9,6 +9,8 @@ import SwiftUI
 
 private enum Constants {
     static let imgSize: CGSize = .init(width: 150.0, height: 150.0)
+    static let verticalSpacing: CGFloat = 20.0
+    static let ImageDescriptionSpacing: CGFloat = 20.0
 }
 
 struct CharacterDetailsView: View {
@@ -23,21 +25,19 @@ struct CharacterDetailsView: View {
             Color.lightBackground.edgesIgnoringSafeArea(.all)
 
             ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: Constants.verticalSpacing) {
                     HStack(alignment: .center, spacing: 40) {
-                        AsyncImageView(url: vm.character.image, imageSize: Constants.imgSize)
+                        CharacterImageView(url: vm.character.image, imageSize: Constants.imgSize)
                         Text(vm.character.name)
-                            .font(.largeTitle)
-                            .foregroundColor(Color.primaryText)
-                            .fontDesign(.monospaced)
+                            .primaryBoldTitle()
                     }
-                    infoLabel(label: "Gender", specifics: vm.character.gender.rawValue)
-                    infoLabel(label: "Comes from ", specifics: vm.character.origin.name)
-                    infoLabel(label: "Last seen on", specifics: vm.character.location.name)
-                    infoLabel(label: "Number of appearances", specifics: String(vm.character.episode.count))
-                    if let firstEpisode = vm.episodes.first, let lastEpisode = vm.episodes.last {
-                        infoLabel(label: "First episode", specifics: "\(firstEpisode.episode) - \(firstEpisode.name)")
-                        infoLabel(label: "Last episode", specifics: "\(lastEpisode.episode) - \(lastEpisode.name)")
+                    InfoLabel(label: "Gender", specifics: vm.character.gender.rawValue)
+                    InfoLabel(label: "Comes from ", specifics: vm.character.origin.name)
+                    InfoLabel(label: "Last seen on", specifics: vm.character.location.name)
+                    InfoLabel(label: "Number of appearances", specifics: String(vm.character.episode.count))
+                    if let firstEpisode = vm.selectedEpisodes.first, let lastEpisode = vm.selectedEpisodes.last {
+                        InfoLabel(label: "First episode", specifics: "\(firstEpisode.episode) - \(firstEpisode.name)")
+                        InfoLabel(label: "Last episode", specifics: "\(lastEpisode.episode) - \(lastEpisode.name)")
                     }
                 }
                 .padding(.top, 20)
@@ -51,49 +51,13 @@ struct CharacterDetailsView: View {
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
-                BackButton()
+                BackButtonBasic()
             }
         }
         .navigationBarBackground(Color.rickBlue)
-        .task {
+        .alert(isPresented: $vm.showingAlert, withError: vm.lastError)
+        .refreshable {
             await vm.fetchEpisode()
-        }
-    }
-}
-
-struct infoLabel: View {
-    var label: String
-    var specifics: String
-    var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text(label)
-                .fontDesign(.monospaced)
-                .foregroundStyle(Color.primaryText)
-                .fontWeight(.bold)
-            Text(specifics)
-                .fontDesign(.monospaced)
-                .foregroundStyle(Color.secondaryText)
-        }
-    }
-}
-
-struct BackButton: View {
-    @Environment(\.presentationMode) var presentationMode
-
-    var body: some View {
-        Button(action: {
-            self.presentationMode.wrappedValue.dismiss()
-        }) {
-            HStack {
-                Image(systemName: "arrow.backward.square")
-                    .aspectRatio(contentMode: .fit)
-                    .foregroundColor(.black)
-                    .fontWeight(.bold)
-                Text("Go back")
-                    .foregroundColor(.black)
-                    .fontDesign(.monospaced)
-                    .fontWeight(.bold)
-            }
         }
     }
 }

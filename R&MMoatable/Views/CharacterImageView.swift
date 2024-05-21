@@ -1,5 +1,5 @@
 //
-//  ImageView.swift
+//  CharacterImageView.swift
 //  R&MMoatable
 //
 //  Created by Jakub Bakalarz on 21/05/2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AsyncImageView: View {
+struct CharacterImageView: View {
     let url: String
     let imageSize: CGSize
 
@@ -32,8 +32,3 @@ struct AsyncImageView: View {
         }
     }
 }
-
-//
-// #Preview {
-//    AsyncImageView()
-// }

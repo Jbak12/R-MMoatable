@@ -9,32 +9,35 @@ import Foundation
 import SwiftUI
 
 class MainListViewModel: ObservableObject {
-    let dataService: DataService
+    private let dataService: RickAnMortyDataService
     @Published var characters: [Character] = []
     @Published var showingAlert = false
-    @Published var lastError: Error?
-    var currentPage: Int = 1
+    @Published var lastError: Error? = nil
     @Published var isLoading = false
+    @Published var isShowingInfo = false
+    private var currentPage: Int = 1
+    private var finishedFetch: Bool = false
+    var isFirstPage: Bool {
+        currentPage == 1
+    }
 
     @MainActor
     func loadData() async {
-        guard !isLoading else { return }
+        guard !isLoading || !finishedFetch else { return }
         isLoading = true
-
-        print("CURRENTPAGE: \(currentPage) ")
         do {
             let page = try await dataService.getPage(pageNumber: currentPage)
             characters.append(contentsOf: page.results)
+            finishedFetch = page.info.next == nil
             currentPage += 1
         } catch {
             lastError = error
             showingAlert = true
         }
-
         isLoading = false
     }
 
-    init(dataService: DataService) {
+    init(dataService: RickAnMortyDataService) {
         self.dataService = dataService
     }
 }

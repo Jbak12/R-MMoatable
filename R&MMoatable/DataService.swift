@@ -15,7 +15,7 @@ protocol RickAnMortyDataService {
 class DataService: RickAnMortyDataService {
     func getPage(pageNumber: Int) async throws -> Page<Character> {
         let urlString = URLProvider.charactersURL + "/?page=\(pageNumber)"
-        guard let url = URL(string: urlString) else { throw URLError(.networkConnectionLost) }
+        guard let url = URL(string: urlString) else { throw URLError(.badURL) }
         do {
             let (data, _) = try await URLSession.shared.data(from: url, delegate: nil)
             let page = try JSONDecoder().decode(Page<Character>.self, from: data)

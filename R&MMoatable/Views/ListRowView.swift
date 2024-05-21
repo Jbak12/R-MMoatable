@@ -18,12 +18,12 @@ struct CharacterRowView: View {
 
     var body: some View {
         HStack(spacing: Constants.listHosrizontalSpacing) {
-            AsyncImageView(url: character.image, imageSize: Constants.imgSize)
+            CharacterImageView(url: character.image, imageSize: Constants.imgSize)
             VStack(alignment: .leading, spacing: 5) {
                 Text(character.name)
-                    .font(.headline)
+                    .primaryRegular()
                 Text("Status: \(character.status.rawValue)")
-                    .font(.subheadline)
+                    .secondaryRegular2()
             }
         }
         .padding(.vertical, 5)

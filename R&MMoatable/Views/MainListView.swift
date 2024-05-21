@@ -6,35 +6,14 @@
 //
 import SwiftUI
 
-extension View {
-    func navigationBarBackground(_ background: Color) -> some View {
-        return modifier(ColoredNavigationBar(background: background))
-    }
-}
-
-struct ColoredNavigationBar: ViewModifier {
-    var background: Color
-
-    func body(content: Content) -> some View {
-        content
-            .toolbarBackground(
-                background,
-                for: .navigationBar
-            )
-            .toolbarBackground(.visible, for: .navigationBar)
-    }
-}
-
 struct MainNavigationTitle: View {
+    let label: String
     let action: () -> Void
 
     var body: some View {
         Button(action: action) {
-            Text("Rick and Morty Characters")
-                .font(.headline)
-                .foregroundColor(.primary)
-                .fontDesign(.monospaced)
-                .fontWeight(.bold)
+            Text(label)
+                .primaryBold()
         }
     }
 }
@@ -76,7 +55,7 @@ struct MainListView: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .principal) {
-                        MainNavigationTitle {
+                        MainNavigationTitle(label: "Rick And Morty Characters") {
                             withAnimation {
                                 proxy.scrollTo(vm.characters.first?.id ?? 0, anchor: .top)
                             }
@@ -84,16 +63,22 @@ struct MainListView: View {
                     }
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Image(systemName: "info.circle")
+                            .onTapGesture {
+                                vm.isShowingInfo.toggle()
+                            }
                     }
                 }
                 .navigationDestination(for: Character.self) { selectedCharacter in
-                    DetailViewFactory.make(from: selectedCharacter)
+                    DetailViewFactory.makeDetailView(from: selectedCharacter)
                 }
                 .navigationBarBackground(Color.rickBlue)
                 .refreshable {
-                    guard vm.currentPage == 1 else { return }
+                    guard vm.isFirstPage else { return }
                     await vm.loadData()
                 }
+                .sheet(isPresented: $vm.isShowingInfo, content: {
+                    GeneralInfoView()
+                })
             }
         }
         .alert(isPresented: $vm.showingAlert, withError: vm.lastError)
