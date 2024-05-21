@@ -16,7 +16,6 @@ class DataService {
             let page = try JSONDecoder().decode(Page<Character>.self, from: data)
             return page
         } catch {
-            print(error)
             throw error
         }
     }

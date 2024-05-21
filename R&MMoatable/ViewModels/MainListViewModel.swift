@@ -11,34 +11,29 @@ import SwiftUI
 class MainListViewModel: ObservableObject {
     let dataService: DataService
     @Published var characters: [Character] = []
-    @Published var showingAlert = true
+    @Published var showingAlert = false
+    @Published var error: Error?
     private var currentPage: Int = 1
-    var isLoading = false
-    @Published var selectedCharacter: Character?
+    var isLoading = true
 
     @MainActor
     func loadData() async {
-        guard !isLoading else { return }
+//        guard !isLoading else { return }
         isLoading = true
 
         print("CURRENTPAGE: \(currentPage) ")
         do {
             let page = try await dataService.getPage(pageNumber: currentPage)
-            characters.append(contentsOf: page.results)
+            await MainActor.run {
+                characters.append(contentsOf: page.results)
+            }
             currentPage += 1
         } catch {
-            print("Failed to load data: \(error.localizedDescription)")
+            self.error = error
+            showingAlert = true
         }
 
         isLoading = false
-    }
-
-    func selectCharacter(_ character: Character) {
-        selectedCharacter = character
-    }
-
-    func deselectCharacter() {
-        selectedCharacter = nil
     }
 
     init(dataService: DataService) {
